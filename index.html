@@ -102,14 +102,24 @@
 
                 <h5>聯絡時間：</h5>
 
-                <p>
-                  <select id="time" name="time">
-                    <option>請選擇聯絡時間：</option>
-                    <option value="白天">白天</option>
-                    <option value="晚間">晚間</option>
-                    <option value="均可">均可</option>
-                  </select>
-                </p>
+                <label>
+
+                  <div class="radio">
+                    <input type="radio" name="time" value="morning">
+                    <span>白天</span> 
+                  </div>
+                
+                  <div class="radio">
+                    <input type="radio" name="time" value="night">
+                    <span>晚間</span>
+                  </div>
+                
+                  <div class="radio">
+                    <input type="radio" name="time" value="ok">
+                    <span>均可</span>
+                  </div>
+
+                </label>
 
                 <h5>詢問事項：</h5>
 

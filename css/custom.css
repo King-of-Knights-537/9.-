@@ -64,7 +64,7 @@ form p:hover, #enquiry:hover{
 }
 
 input{
-  border: none; width: 100%;
+  border: none; 
 }
 
 input:focus{
@@ -73,19 +73,6 @@ input:focus{
 
 input.yellow::placeholder{
   color: #d4af37 !important; 
-}
-
-select{
-  border: none; width: 100%; letter-spacing: 1px;
-  -webkit-appearance: none; -moz-appearance: none;
-}
-
-select:focus{
-  outline: none;
-}
-
-option{
-  -webkit-appearance: none; -moz-appearance: none;
 }
 
 #enquiry{
@@ -106,8 +93,20 @@ option{
   font-weight:bold; letter-spacing: 2px !important;
 }
 
+p>input{
+  width: 100%;
+}
+
+label{
+  margin-bottom: 1em;
+}
+
 #btn:hover{
   background: #4F4F4F; transition: 0.5s ease all;
+}
+
+.radio{
+  display: inline-block; font-size:20px; padding-right: 1em;
 }
 
 @media only screen and (max-width: 764px){

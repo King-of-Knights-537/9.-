@@ -42,8 +42,8 @@ $mail = new PHPMailer();
 
     //Content
     $mail->isHTML(true);                                  // 是否以HTML文档格式发送  发送后客户端可直接显示对应HTML内容
-    $mail->Subject = '網上來客 預約借款通知';
-    $mail->Body    = '姓名：' . $_POST["name"] . "<br> 聯絡電話：" . $_POST["Phone"] . '<br> 電子郵件：' . $_POST["email"] . '<br> Line ID：' . $_POST["Url"] . '<br> 請選擇聯絡時間：' . $_POST["time"] . '<br> 詢問事項：' . $_POST["enquiry"];
+    $mail->Subject = '網站系統表單';
+    $mail->Body    = '<strong> 您的表單 "請填寫下列表單，任何資金問題，我們都可以替您解決！" 有用戶提交數據 </strong>' . '姓名：' . $_POST["name"] . "<br> 聯絡電話：" . $_POST["Phone"] . '<br> 電子郵件：' . $_POST["email"] . '<br> Line ID：' . $_POST["Url"] . '<br> 請選擇聯絡時間：' . $_POST["time"] . '<br> 詢問事項：' . $_POST["enquiry"] . '<br> 訪問地址：<a>查看</a> <br> 系統郵件無需回覆';
     $mail->AltBody = '閣下郵件客户端不支持HTML, 因而不能顯示内容';
 
     $mail->send();
