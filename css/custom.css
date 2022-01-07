@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional');
+
+body{
+  margin:0px ; line-height: 1.5; 
+  background-color: #f5f5f5 !important;
+  letter-spacing: 2px !important; 
+}
+
+p{
+  font-size: 20px; font-weight: 500
+}
+
+main{
+  width: 100%; 
+}
+
+.container{
+  margin-top: 3em
+}
+
+div.banner{
+  vertical-align: top;
+  display: inline-block;
+}
+
+div.form{
+  vertical-align: top;
+  display: inline-block; margin-left: 3em; margin-bottom: 5em;
+  background: #fff; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+div.banner img{
+  width: 95%;
+}
+
+form{
+  width:auto; display: block; margin: auto;
+  padding: 0em 6em; margin-bottom: 5em;
+}
+
+form h5{
+  text-align: left;
+}
+
+form p{
+  padding: 8px;
+  border: 1px solid #bdbdbd;
+  margin: 20px 0; color: #000;
+  border-radius: 10px; -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+form p:hover, #enquiry:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  transition: 0.3s ease all;
+}
+
+.form .title{
+  background-color: #103d42; color: #fff; 
+  padding: 1.5em 1.5em; margin-bottom: 1.5em;
+}
+.form .title h1{
+  font-size: 20px;
+}
+
+input{
+  border: none; width: 100%;
+}
+
+input:focus{
+  outline: none; 
+}
+
+input.yellow::placeholder{
+  color: #d4af37 !important; 
+}
+
+select{
+  border: none; width: 100%; letter-spacing: 1px;
+  -webkit-appearance: none; -moz-appearance: none;
+}
+
+select:focus{
+  outline: none;
+}
+
+option{
+  -webkit-appearance: none; -moz-appearance: none;
+}
+
+#enquiry{
+  width:100%; height: 125px; padding: 1em; margin-top: 1em;
+  border-radius: 10px; -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; line-height: 20px;
+  border: 1px solid #bdbdbd;
+  resize: none; outline: none;
+}
+
+#btn{
+  margin: auto; display: block;
+  background: #272727; color: #fff;
+  text-align: center; padding: 13px 26px; 
+  font-size: 20px; outline: none;
+  cursor: pointer; border-radius: 50px;
+  width: 95%; margin-top: 3em;
+  font-weight:bold; letter-spacing: 2px !important;
+}
+
+#btn:hover{
+  background: #4F4F4F; transition: 0.5s ease all;
+}
+
+@media only screen and (max-width: 764px){
+  /* For mobile phones: */
+  p{
+    font-size: 17px; 
+  }
+  
+  .container{
+    margin-top: 2em
+  }
+
+  div.banner{
+    vertical-align: top;
+    display: block; margin: auto; 
+    margin-bottom: 3em;
+  }
+
+  div.form{
+    vertical-align: top; width: 95%;
+    display: block; margin: auto; 
+  }
+
+  form{
+    width:auto; display: block; margin: auto;
+    padding: 0em 2em; margin-bottom: 5em; padding-bottom: 3em;
+  }
+
+  #btn{
+    margin-top: 2em;
+  }
+
+}
+
+@media screen and (min-width:765px) and (max-width:990px){
+  form{
+    width:auto; display: block; margin: auto;
+    padding: 0em 1.3em; padding-bottom: 3em;
+  }
+
+  #btn{
+    margin-top: 2em;
+  }
+}

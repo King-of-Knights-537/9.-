@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:type" content="article" />
+
+        <meta property="og:title" content="祥鳳資產" />
+
+        <meta property="og:url" content="" />
+
+        <meta property="og:image" content="http://www.kimduoduo.tw/img/Wallpaper/metaog.jpg"/>
+
+        <meta name="twitter:card" content="summary" />
+
+        <meta name="twitter:title" content="祥鳳資產" />
+
+        <meta name="twitter:image" content="" />
+
+        <meta name="robots" content="noindex,nofollow">
+
+        <title>祥鳳資產</title>
+
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+
+        <link rel="canonical" href="" />
+
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <!--GSAP-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/4188a81d98.js" crossorigin="anonymous"></script>
+
+        <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+
+        <style>
+
+            .notfound-404{
+                opacity: 0; visibility: hidden; 
+                transition: 1s ease all;
+                transform: translateY(-100px);
+            }
+
+            .notfound-404.loaded{
+                opacity: 1; visibility: visible;
+                transform: translateY(0px);   
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="notfound">
+            <div class="notfound">
+                <div class="notfound-404">
+                    <h1>Oops!</h1>
+                </div>
+                <h2>404 - 出現錯誤</h2>
+                <p>基於網路出現問題，請檢查家中網路是否安全以及已經連接。</p>
+                <a href="index.html">請返回首頁</a>
+            </div>
+        </div>
+
+        <script>
+
+            $(function () {
+
+                $(".notfound-404").addClass("loaded");
+                
+            });
+
+        </script>
+        
+    </body>
+
+</html>
